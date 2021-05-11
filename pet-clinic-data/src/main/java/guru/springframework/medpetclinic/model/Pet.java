@@ -2,7 +2,7 @@ package guru.springframework.medpetclinic.model;
 
 import java.time.LocalDate;
 
-public class Pat {
+public class Pet {
 
     private PetType petType;
     private Owner owner;
