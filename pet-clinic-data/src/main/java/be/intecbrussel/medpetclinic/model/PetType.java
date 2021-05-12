@@ -1,4 +1,4 @@
-package guru.springframework.medpetclinic.model;
+package be.intecbrussel.medpetclinic.model;
 
 public class PetType extends BaseEntity{
 

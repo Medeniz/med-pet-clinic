@@ -1,4 +1,4 @@
-package guru.springframework.medpetclinic.services.map;
+package be.intecbrussel.medpetclinic.services.map;
 
 import java.util.HashMap;
 import java.util.HashSet;

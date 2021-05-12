@@ -1,7 +1,7 @@
-package guru.springframework.medpetclinic.services.map;
+package be.intecbrussel.medpetclinic.services.map;
 
-import guru.springframework.medpetclinic.model.Owner;
-import guru.springframework.medpetclinic.services.CrudService;
+import be.intecbrussel.medpetclinic.model.Owner;
+import be.intecbrussel.medpetclinic.services.CrudService;
 
 import java.util.Set;
 

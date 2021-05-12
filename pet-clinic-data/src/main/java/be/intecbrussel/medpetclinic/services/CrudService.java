@@ -1,4 +1,4 @@
-package guru.springframework.medpetclinic.services;
+package be.intecbrussel.medpetclinic.services;
 
 import java.util.Set;
 

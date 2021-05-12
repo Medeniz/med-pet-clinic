@@ -1,6 +1,6 @@
-package guru.springframework.medpetclinic.services;
+package be.intecbrussel.medpetclinic.services;
 
-import guru.springframework.medpetclinic.model.Owner;
+import be.intecbrussel.medpetclinic.model.Owner;
 
 public interface OwnerService extends CrudService<Owner, Long> {
 
