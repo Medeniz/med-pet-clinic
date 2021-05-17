@@ -1,11 +1,11 @@
 package be.intecbrussel.medpetclinic.services.map;
 
 import be.intecbrussel.medpetclinic.model.Pet;
-import be.intecbrussel.medpetclinic.services.CrudService;
+import be.intecbrussel.medpetclinic.services.PetService;
 
 import java.util.Set;
 
-public class PetServiceMap extends AbstractMapService<Pet,Long> implements CrudService<Pet, Long> {
+public class PetServiceMap extends AbstractMapService<Pet,Long> implements PetService {
 
     @Override
     public Set<Pet> findAll() {
