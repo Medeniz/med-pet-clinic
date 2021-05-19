@@ -13,10 +13,12 @@ public class PetServiceMap extends AbstractMapService<Pet,Long> implements PetSe
     public Set<Pet> findAll() {
         return super.findAll();
     }
+
     @Override
     public Pet findById(Long id) {
         return super.findById(id);
     }
+
     @Override
     public Pet save(Pet object) {
         return super.save(object);

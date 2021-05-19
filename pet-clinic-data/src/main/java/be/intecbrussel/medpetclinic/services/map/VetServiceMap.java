@@ -13,6 +13,7 @@ public class VetServiceMap extends AbstractMapService<Vet,Long> implements VetSe
     public Set<Vet> findAll() {
         return super.findAll();
     }
+
     @Override
     public Vet findById(Long id) {
         return super.findById(id);
@@ -26,7 +27,6 @@ public class VetServiceMap extends AbstractMapService<Vet,Long> implements VetSe
     @Override
     public void delete(Vet object) {
         super.delete(object);
-
     }
 
     @Override
