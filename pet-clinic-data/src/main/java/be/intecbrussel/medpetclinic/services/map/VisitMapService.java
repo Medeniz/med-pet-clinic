@@ -2,9 +2,11 @@ package be.intecbrussel.medpetclinic.services.map;
 
 import be.intecbrussel.medpetclinic.model.Visit;
 import be.intecbrussel.medpetclinic.services.VisitService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class VisitMapService extends AbstractMapService<Visit,Long> implements VisitService {
 
     @Override
