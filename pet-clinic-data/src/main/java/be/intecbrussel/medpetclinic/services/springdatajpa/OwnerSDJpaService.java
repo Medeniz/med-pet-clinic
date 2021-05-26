@@ -3,7 +3,7 @@ package be.intecbrussel.medpetclinic.services.springdatajpa;
 import be.intecbrussel.medpetclinic.model.Owner;
 import be.intecbrussel.medpetclinic.repositories.OwnerRepository;
 import be.intecbrussel.medpetclinic.repositories.PetRepository;
-import be.intecbrussel.medpetclinic.repositories.PetTypeReposıtory;
+import be.intecbrussel.medpetclinic.repositories.PetTypeRepository;
 import be.intecbrussel.medpetclinic.services.OwnerService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
@@ -17,10 +17,10 @@ public class OwnerSDJpaService implements OwnerService {
 
     private final OwnerRepository ownerRepository;
     private final PetRepository petRepository;
-    private final PetTypeReposıtory petTypeReposıtory;
+    private final PetTypeRepository petTypeReposıtory;
 
     public OwnerSDJpaService(OwnerRepository ownerRepository, PetRepository petRepository,
-                             PetTypeReposıtory petTypeReposıtory) {
+                             PetTypeRepository petTypeReposıtory) {
         this.ownerRepository = ownerRepository;
         this.petRepository = petRepository;
         this.petTypeReposıtory = petTypeReposıtory;
