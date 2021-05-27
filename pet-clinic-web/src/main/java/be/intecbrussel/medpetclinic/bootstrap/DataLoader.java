@@ -32,8 +32,6 @@ public class DataLoader implements CommandLineRunner {
         if (count == 0) {
             loadData();
         }
-
-
     }
 
     private void loadData() {
@@ -57,7 +55,6 @@ public class DataLoader implements CommandLineRunner {
         dentistry.setDescription("Dentistry");
         Speciality savedDentistry = specialityService.save(dentistry);
 
-
         Owner owner1 = new Owner();
         owner1.setFirstName("Micheal");
         owner1.setLastName("Weston");
@@ -72,7 +69,6 @@ public class DataLoader implements CommandLineRunner {
         mikesPet.setBirthDate(LocalDate.now());
         mikesPet.setName("Rosco");
         owner1.getPets().add(mikesPet);
-
 
         Owner owner2 = new Owner();
         owner2.setFirstName("Fiona");
