@@ -1,5 +1,6 @@
 package medpetclinic.controllers;
 
+import be.intecbrussel.medpetclinic.controllers.VisitController;
 import be.intecbrussel.medpetclinic.model.Owner;
 import be.intecbrussel.medpetclinic.model.Pet;
 import be.intecbrussel.medpetclinic.model.PetType;
@@ -11,6 +12,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
@@ -29,6 +31,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @ExtendWith(MockitoExtension.class)
+@SpringBootTest
 class VisitControllerTest {
 
     private static final String PETS_CREATE_OR_UPDATE_VISIT_FORM = "pets/createOrUpdateVisitForm";
@@ -85,10 +88,8 @@ class VisitControllerTest {
     void initNewVisitForm() throws Exception {
         mockMvc.perform(get(visitsUri))
                 .andExpect(status().isOk())
-                .andExpect(view().name(PETS_CREATE_OR_UPDATE_VISIT_FORM))
-        ;
+                .andExpect(view().name(PETS_CREATE_OR_UPDATE_VISIT_FORM));
     }
-
 
     @Test
     void processNewVisitForm() throws Exception {
@@ -98,7 +99,6 @@ class VisitControllerTest {
                             .param("description", YET_ANOTHER_VISIT_DESCRIPTION))
                 .andExpect(status().is3xxRedirection())
                 .andExpect(view().name(REDIRECT_OWNERS_1))
-                .andExpect(model().attributeExists("visit"))
-        ;
+                .andExpect(model().attributeExists("visit"));
     }
 }
