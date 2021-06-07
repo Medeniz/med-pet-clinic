@@ -36,7 +36,6 @@ class OwnerSDJpaServiceTest {
 
     @InjectMocks
     OwnerSDJpaService service;
-
     Owner returnOwner;
 
     @BeforeEach
